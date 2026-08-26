@@ -559,3 +559,321 @@ h1,h2,h3,p,a,strong,span{overflow-wrap:break-word}
   .hero{padding-top:30px}
   .mobile-booking{display:none}
 }
+
+/* =========================================================
+   MOBILE-FIRST V4 — hard phone layout fix (320–520 px)
+   Fixes horizontal overflow, oversized hero, stats and bottom CTA.
+   ========================================================= */
+@media (max-width:520px){
+  html{
+    width:100%;
+    max-width:100%;
+    overflow-x:clip;
+    scroll-padding-top:66px;
+  }
+  body{
+    width:100%;
+    max-width:100%;
+    overflow-x:clip;
+    padding-bottom:82px;
+  }
+  body > *, main, section, header, footer,
+  .site-header,.header-inner,.hero,.stats-section,.stats-grid,
+  .section,.section-heading,.about-grid,.service-grid,.process-grid,
+  .results-grid,.education-gallery,.reviews-grid,.price-groups,
+  .price-bottom,.contact-grid,.footer-top,.footer-bottom{
+    max-width:100%;
+  }
+  img,video,iframe,svg{max-width:100%}
+
+  /* Header */
+  .site-header{overflow:visible}
+  .header-inner{
+    width:100%;
+    height:62px!important;
+    min-height:62px;
+    padding:0 10px;
+    gap:6px;
+  }
+  .brand{flex:0 0 auto;min-width:0}
+  .brand img{width:42px;height:32px;border-radius:9px}
+  .brand span{display:none}
+  .header-actions{min-width:0;gap:6px;margin-left:auto}
+  .language-switcher{flex:0 0 auto;padding:2px}
+  .lang-btn{min-width:30px;height:28px;padding:0 7px;font-size:10px}
+  .menu-btn{flex:0 0 34px;width:34px;height:34px}
+  .main-nav{
+    left:8px;
+    right:8px;
+    top:68px;
+    width:auto;
+    max-width:none;
+    max-height:calc(100dvh - 80px);
+  }
+
+  /* Hero — text first, compact portrait second */
+  .hero{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    margin:0;
+    padding:30px 14px 44px;
+    gap:26px;
+    overflow:hidden;
+  }
+  .hero-copy{
+    order:1;
+    width:100%;
+    margin:0;
+    text-align:left;
+  }
+  .hero-visual{
+    order:2;
+    display:block;
+    width:100%;
+    min-height:0;
+    margin:0;
+  }
+  .hero-glow-one{width:220px;height:220px;left:-120px;top:120px}
+  .hero-glow-two{width:160px;height:160px;right:-100px;bottom:10px}
+  .eyebrow{font-size:9.5px;line-height:1.45;letter-spacing:.11em;gap:8px}
+  .eyebrow-dot{margin-top:4px}
+  .hero h1{
+    width:100%;
+    max-width:none;
+    margin:14px 0 17px;
+    font-size:clamp(38px,11.6vw,50px);
+    line-height:1.01;
+    letter-spacing:-.045em;
+  }
+  .hero-lead{font-size:14.5px;line-height:1.55;max-width:none}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:8px;margin-top:22px}
+  .hero-actions .btn{width:100%;min-height:47px;padding:11px 14px;font-size:13px}
+  .hero-note{margin-top:22px;gap:10px}
+  .hero-note p{font-size:11px;line-height:1.45;max-width:none}
+  .hero-note strong{font-size:14px}
+  .mini-avatars span{width:28px;height:28px;font-size:10px}
+  .hero-frame{
+    width:100%;
+    max-width:430px;
+    margin:0 auto;
+    aspect-ratio:4/4.65;
+    max-height:455px;
+    border-radius:36% 36% 22px 22px;
+    box-shadow:0 16px 48px rgba(34,59,44,.12);
+  }
+  .hero-frame::before{inset:9px}
+  .hero-photo{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 23%;
+    animation:none!important;
+  }
+  .hero-badge{
+    left:12px;
+    bottom:12px;
+    width:74px;
+    height:74px;
+  }
+  .hero-badge strong{font-size:27px}
+  .hero-badge span{font-size:9px;line-height:1.15}
+  .floating-card{display:none!important}
+
+  /* Stats — compact 2x2, no oversized cells */
+  .stats-section{width:100%;overflow:hidden}
+  .stats-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .stat{
+    min-width:0;
+    min-height:126px;
+    padding:23px 14px 20px;
+    border:0!important;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .stat:nth-child(odd){border-right:1px solid rgba(255,255,255,.11)!important}
+  .stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.11)!important}
+  .stat strong{font-size:clamp(37px,11vw,45px);line-height:.95}
+  .stat span{margin-top:10px;font-size:11px;line-height:1.35}
+
+  /* Global mobile spacing */
+  .section{width:100%;padding:56px 14px}
+  .section-heading{width:100%;margin:0 0 28px}
+  .section-heading h2{font-size:clamp(31px,9vw,39px);line-height:1.08}
+  .section-heading>p,.section-heading.split p{font-size:13px;line-height:1.55}
+  .kicker{font-size:9.5px;letter-spacing:.14em}
+
+  /* About */
+  .about-grid{gap:28px}
+  .about-media{width:100%}
+  .about-media>img{
+    width:100%;
+    height:auto;
+    aspect-ratio:4/4.6;
+    object-fit:cover;
+    object-position:center 20%;
+    border-radius:22px;
+  }
+  .about-quote{margin:-36px 9px 0;padding:17px;border-radius:16px}
+  .about-quote span{font-size:36px}
+  .about-quote p{font-size:12px;line-height:1.5}
+  .large-copy{font-size:20px;line-height:1.42;margin-bottom:26px}
+  .feature{grid-template-columns:26px minmax(0,1fr);gap:10px;padding:17px 0}
+  .feature h3{font-size:19px}
+  .feature p{font-size:12.5px;line-height:1.5}
+
+  /* Cards */
+  .service-grid,.process-grid,.results-grid,.reviews-grid,.price-groups,.faq-list,.contact-grid{
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  .service-card{padding:21px;border-radius:19px}
+  .service-card h3{font-size:24px}
+  .service-card p{font-size:12.5px}
+  .service-icon{width:42px;height:42px}
+  .illustration-ribbon{padding:12px;border-radius:18px}
+  .illustration-ribbon img{aspect-ratio:16/10;border-radius:14px}
+  .illustration-ribbon h3{font-size:23px}
+  .illustration-ribbon p{font-size:12.5px}
+  .process-step{padding:20px;border-radius:19px}
+  .process-step h3{font-size:20px}
+  .process-step p{font-size:12.5px}
+  .result-card,.result-copy{border-radius:20px}
+  .result-copy{min-height:260px;padding:24px}
+  .result-copy h3{font-size:29px}
+
+  /* Galleries — never create page-wide horizontal overflow */
+  .education-gallery{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr!important;
+    grid-auto-rows:auto!important;
+    gap:10px;
+    overflow:visible!important;
+  }
+  .education-gallery figure,
+  .education-gallery .edu-main,
+  .education-gallery figure:nth-child(4){
+    width:100%;
+    min-width:0!important;
+    height:auto!important;
+    grid-column:auto!important;
+    grid-row:auto!important;
+    aspect-ratio:4/3;
+    border-radius:18px;
+  }
+  .education-gallery .edu-main{aspect-ratio:4/4.5}
+  .review-shot{width:100%;min-width:0}
+  .review-shot img{width:100%;height:auto;max-height:none;object-fit:contain}
+
+  /* Prices */
+  .pricing-section{padding-top:56px}
+  .price-group{width:100%;border-radius:20px}
+  .price-group-head{padding:16px;gap:10px}
+  .price-group-head>div{min-width:0;gap:9px}
+  .price-index{flex:0 0 34px;width:34px;height:34px;font-size:9px}
+  .price-group-head h3{font-size:21px;overflow-wrap:anywhere}
+  .price-group-head img{flex:0 0 48px;width:48px;height:48px;border-radius:12px}
+  .price-list{padding:3px 16px 9px}
+  .price-row{display:grid;grid-template-columns:1fr;gap:5px;padding:13px 0}
+  .price-row>span{font-size:12.5px;line-height:1.45}
+  .price-row strong{text-align:left;font-size:19px;white-space:normal}
+  .price-row small{font-size:9px}
+  .price-bottom{width:100%;padding:19px;border-radius:18px;gap:16px}
+  .price-bottom p{font-size:12px}
+
+  /* FAQ */
+  .faq-item{width:100%;border-radius:16px}
+  .faq-question{padding:16px;font-size:13px;gap:10px}
+  .faq-question:hover{padding-left:16px}
+  .faq-question i{flex:0 0 29px;width:29px;height:29px;font-size:20px}
+  .faq-answer p{padding-left:16px;padding-right:16px;font-size:12px}
+  .faq-item.is-open .faq-answer p{padding-bottom:16px}
+
+  /* Contact / map */
+  .contact-copy{width:100%;padding:22px 17px;border-radius:20px}
+  .contact-copy h2{font-size:34px}
+  .contact-copy>p{font-size:13px}
+  .contact-links a{grid-template-columns:minmax(0,1fr) 18px;padding:14px 0;gap:7px}
+  .contact-label{grid-column:1/-1;font-size:10px}
+  .contact-links strong{font-size:13px;overflow-wrap:anywhere}
+  .location-card{width:100%;min-height:365px;border-radius:20px}
+  .location-content{left:10px;right:10px;bottom:10px;padding:17px;border-radius:17px}
+  .location-content h3{font-size:22px}
+  .location-content p{font-size:12px}
+
+  /* Footer */
+  .site-footer{width:100%;padding:46px 14px 100px}
+  .footer-top{gap:27px;padding-bottom:32px}
+  .footer-brand p,.footer-column a,.footer-address{font-size:12px}
+  .footer-bottom{gap:11px;font-size:9.5px;line-height:1.5}
+  .developer-credit{text-align:left}
+
+  /* Fixed mobile CTA — strictly inside viewport */
+  .mobile-booking{
+    box-sizing:border-box;
+    left:8px!important;
+    right:auto!important;
+    bottom:max(8px,env(safe-area-inset-bottom))!important;
+    width:calc(100% - 16px)!important;
+    max-width:calc(100% - 16px)!important;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:6px;
+    padding:6px;
+    border-radius:16px;
+    overflow:hidden;
+  }
+  .mobile-booking a{
+    min-width:0;
+    width:100%;
+    min-height:45px;
+    padding:7px 6px;
+    border-radius:11px;
+    overflow:hidden;
+  }
+  .mobile-booking span{
+    display:block;
+    width:100%;
+    font-size:11px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:center;
+  }
+  .mobile-booking small{
+    display:block;
+    width:100%;
+    max-width:100%;
+    margin-top:1px;
+    font-size:8px;
+    line-height:1.2;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:center;
+  }
+}
+
+@media (max-width:390px){
+  .hero{padding-inline:12px}
+  .hero h1{font-size:clamp(36px,11.8vw,44px)}
+  .hero-frame{aspect-ratio:4/4.75}
+  .stat{min-height:116px;padding:20px 12px}
+  .stat strong{font-size:38px}
+  .section{padding-inline:12px}
+  .mobile-booking small{display:none}
+  .mobile-booking a{min-height:43px}
+}
+
+@media (max-width:340px){
+  .language-switcher .lang-btn{min-width:27px;padding:0 5px}
+  .hero h1{font-size:35px}
+  .stats-grid{grid-template-columns:1fr}
+  .stat{min-height:100px;text-align:center;border-right:0!important;border-bottom:1px solid rgba(255,255,255,.11)!important}
+  .stat:last-child{border-bottom:0!important}
+}
