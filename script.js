@@ -17,7 +17,7 @@ const translations = {
     footer:{tagline:'Профессиональный лечебный детский и женский массаж с заботой и индивидуальным подходом.',contacts:'Контакты Jadra Masaj',navigation:'Навигация',rights:'Все права защищены.',created:'Сайт создан:',address:'Газалкент, ул. Беруни, 6/45'},
     mobile:{telegram:'Записаться',call:'Позвонить'},
     alts:{specialist:'Специалист Jadra Masaj по детскому и женскому массажу в Газалкенте',babyMassage:'Иллюстрация детского массажа',footMassage:'Иллюстрация массажа ног',trainingClass:'Обучение и профессиональная практика Jadra Masaj',training:'Обучение Jadra Masaj',certificate:'Сертификат специалиста Jadra Masaj',resultBaby:'Пример из практики детского массажа',resultPosture:'Пример динамики во время курса массажа',review:'Отзыв клиента Jadra Masaj'},
-    seo:{title:'Jadra Masaj в Газалкенте — детский и женский массаж',description:'Jadra Masaj в Газалкенте — профессиональный детский и женский массаж. 10 лет опыта, 350+ довольных клиентов. Адрес: ул. Беруни, 6/45. Запись через Telegram, Instagram или по телефону.',ogTitle:'Jadra Masaj — массаж в Газалкенте',ogDescription:'10 лет опыта, 350+ довольных клиентов. Детский и женский массаж в Газалкенте, ул. Беруни, 6/45.'}
+    seo:{title:'Jadra Masaj в Газалкенте — детский и женский массаж',description:'Jadra Masaj в Газалкенте — профессиональный детский и женский массаж. 5 лет опыта, 1000+ довольных клиентов. Адрес: ул. Беруни, 6/45. Запись через Telegram, Instagram или по телефону.',ogTitle:'Jadra Masaj — массаж в Газалкенте',ogDescription:'5 лет опыта, 1000+ довольных клиентов. Детский и женский массаж в Газалкенте, ул. Беруни, 6/45.'}
   },
   uz: {
     skip:"Asosiy mazmunga o'tish",
@@ -37,7 +37,7 @@ const translations = {
     footer:{tagline:"G'amxo'rlik va individual yondashuv bilan professional davolovchi bolalar va ayollar massaji.",contacts:'Jadra Masaj kontaktlari',navigation:'Navigatsiya',rights:'Barcha huquqlar himoyalangan.',created:'Sayt yaratildi:',address:"Gazalkent, Beruniy ko'chasi, 6/45"},
     mobile:{telegram:'Yozilish',call:"Qo'ng'iroq"},
     alts:{specialist:'Gazalkentdagi Jadra Masaj bolalar va ayollar massaji mutaxassisi',babyMassage:'Bolalar massaji illyustratsiyasi',footMassage:'Oyoq massaji illyustratsiyasi',trainingClass:"Jadra Masaj o'qishi va professional amaliyoti",training:"Jadra Masaj ta'lim jarayoni",certificate:'Jadra Masaj mutaxassisi sertifikati',resultBaby:'Bolalar massaji amaliyotidan namuna',resultPosture:'Massaj kursidagi dinamika namunasi',review:'Jadra Masaj mijoz sharhi'},
-    seo:{title:'Jadra Masaj Gazalkent — bolalar va ayollar massaji',description:"Jadra Masaj Gazalkentda — professional bolalar va ayollar massaji. 10 yillik tajriba, 350+ mamnun mijoz. Manzil: Beruniy ko'chasi, 6/45.",ogTitle:'Jadra Masaj — Gazalkentda massaj',ogDescription:"10 yillik tajriba, 350+ mamnun mijoz. Gazalkentda bolalar va ayollar massaji, Beruniy ko'chasi 6/45."}
+    seo:{title:'Jadra Masaj Gazalkent — bolalar va ayollar massaji',description:"Jadra Masaj Gazalkentda — professional bolalar va ayollar massaji. 5 yillik tajriba, 1000+ mamnun mijoz. Manzil: Beruniy ko'chasi, 6/45.",ogTitle:'Jadra Masaj — Gazalkentda massaj',ogDescription:"5 yillik tajriba, 1000+ mamnun mijoz. Gazalkentda bolalar va ayollar massaji, Beruniy ko'chasi 6/45."}
   },
   kk: {
     skip:'Негізгі мазмұнға өту',
@@ -57,7 +57,7 @@ const translations = {
     footer:{tagline:'Қамқорлықпен және жеке тәсілмен кәсіби емдік балалар және әйелдер массажы.',contacts:'Jadra Masaj байланыстары',navigation:'Навигация',rights:'Барлық құқық қорғалған.',created:'Сайтты жасаған:',address:'Газалкент, Беруни көшесі, 6/45'},
     mobile:{telegram:'Жазылу',call:'Қоңырау шалу'},
     alts:{specialist:'Газалкенттегі Jadra Masaj балалар және әйелдер массажы маманы',babyMassage:'Балалар массажының иллюстрациясы',footMassage:'Аяқ массажының иллюстрациясы',trainingClass:'Jadra Masaj оқу және кәсіби практикасы',training:'Jadra Masaj оқу барысы',certificate:'Jadra Masaj маманының сертификаты',resultBaby:'Балалар массажы практикасынан мысал',resultPosture:'Массаж курсындағы динамика мысалы',review:'Jadra Masaj клиентінің пікірі'},
-    seo:{title:'Jadra Masaj Газалкент — балалар және әйелдер массажы',description:'Jadra Masaj Газалкентте — кәсіби балалар және әйелдер массажы. 10 жыл тәжірибе, 350+ риза клиент. Мекенжай: Беруни көшесі, 6/45.',ogTitle:'Jadra Masaj — Газалкентте массаж',ogDescription:'10 жыл тәжірибе, 350+ риза клиент. Газалкентте балалар және әйелдер массажы, Беруни көшесі 6/45.'}
+    seo:{title:'Jadra Masaj Газалкент — балалар және әйелдер массажы',description:'Jadra Masaj Газалкентте — кәсіби балалар және әйелдер массажы. 5 жыл тәжірибе, 1000+ риза клиент. Мекенжай: Беруни көшесі, 6/45.',ogTitle:'Jadra Masaj — Газалкентте массаж',ogDescription:'5 жыл тәжірибе, 1000+ риза клиент. Газалкентте балалар және әйелдер массажы, Беруни көшесі 6/45.'}
   }
 };
 
